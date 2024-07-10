@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    padding: 0 10rem;
+    overflow: hidden;
+}
+
+::selection {
+    background-color: #000;
+    color: #9333ea;
+}
+
+:root {
+    --primary-color: #a855f7;
+    --primary-color-dark: #9333ea;
+    --secondary-color: #9333ea;
+    --text-dark: #ffffff;
+    --text-light: #d1d5db;
+    --extra-light: #faf5ff;
+    --max-width: 1200px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 99;
+}
+
+.nav__content {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: color 0.3s;
+}
+
+nav .logo a:hover {
+    color: var(--primary-color-dark);
+}
+
+nav .checkbox {
+    display: none;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+ul li a {
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: border-color 0.3s, color 0.3s;
+}
+
+ul li a:hover {
+    border-top-color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+section {
+    width: 100%;
+    max-width: var(--max-width);
+    margin-top: 50px; /* Adjusted to fit below the navbar */
+    padding-top: 80px; /* Additional padding to lower the containers */
+}
+
+.heading {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 20px;
+ 
+    
+}
+.info span {
+    text-decoration: underline;
+    color: #a855f7; /* Replace 'your_color_here' with your desired color */
+    text-size-adjust: 40px;
+}
+.skill-container .info span {
+    font-size: 24px !important; /* Adjust the value as needed */
+}
+
+
+
+.skill-containers {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    opacity: 0; /* Initial state for animation */
+}
+
+.skill-container:nth-child(odd) {
+    transform: translateX(-100%); /* Slide in from left */
+    animation: slide-in-left 1s forwards;
+}
+
+.skill-container:nth-child(even) {
+    transform: translateX(100%); /* Slide in from right */
+    animation: slide-in-right 1s forwards;
+}
+
+.skill-container .info span {
+    font-size: 17px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skill-container .info p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.skill-container .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.skill-container .btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
+@keyframes slide-in-left {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.android-container {
+    margin-left: 40px; /* Adjust this value as needed */
+}

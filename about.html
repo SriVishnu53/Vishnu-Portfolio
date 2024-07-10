@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="about.css" />
+    <title>About Me</title>
+    <style>
+     @keyframes floating {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(10px);
+                /* Adjust the floating distance */
+            }
+        }
+
+        /* Additional CSS for moving the section container downward */
+        .section__container {
+            margin-top: 20px;
+            /* Adjust the margin-top as needed */
+        }
+
+        .content {
+            text-align: justify;
+            /* Align text properly */
+            max-width: 800px;
+            /* Limit width for better readability */
+            margin: auto;
+            /* Center horizontally */
+            padding: 0 20px;
+            /* Add padding for better spacing */
+        }
+        .section {
+            height: 100vh; /* Ensure the section takes full viewport height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="index.html">Sri Vishnu.B</a></div> <!-- Link back to Home Page -->
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" name="check" id="check" />
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li> <!-- Current page does not need a link -->
+                <li><a href="Skill.html">Skill</a></li>
+                <li><a href="Project.html">Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+
+    <section class="section">
+        <div class="section__container">
+            <div class="content">
+                &nbsp;
+                <h1 class="title">
+                    Hi, I'm <span>Vishnu</span>
+                </h1>
+                <p class="description">
+                    I hold a Bachelor's degree in Computer Applications (BCA), and I have a keen interest in creating
+                    websites and Android apps. I've completed two projects: one is a "Text-Based Sentiment Analysis"
+                    using Python and Streamlit to determine the positive, negative, and neutral percentages in text
+                    content. The other project is the "Student Voting App," designed to facilitate the selection of
+                    department secretaries using XML, Java, and SQLite.
+                </p>
+                <p class="description">
+                    I've also attended workshops in designing website front-ends, developing Java applications, and
+                    programming in Java. Additionally, I've participated in national-level IT events in 2022 and 2024,
+                    focusing on web development and full-stack MEAN development.
+                </p>
+                <p class="description">
+                    I'm enthusiastic about applying my skills to real-world projects. Apart from my technical abilities,
+                    I am good at designing certificates, invitations, vouchers, banners, thumbnails, and pages. In my
+                    leisure time, I enjoy cooking, singing, and capturing moments through photography.
+                </p>
+            </div>
+            <!-- Internship Section -->
+            <div class="internship">
+                <h2>Internship Experience</h2><br>
+                <p class="description">
+                    <strong><span style="color: #a855f7;">Internship Title :</span></strong>&nbsp; Web Developer Intern<br><br>
+                    <strong><span style="color: #a855f7;">Company :</span></strong> &nbsp;TECH OCTANET SERVICES PVT LTD.<br><br>
+                    <strong><span style="color: #a855f7;">Duration :</span></strong> &nbsp; 2024 - July 2024<br><br>
+                    <strong><span style="color: #a855f7;">Description :</span></strong> &nbsp;Worked on developing and maintaining web applications using Html, Css and javaScript. 
+                    During this internship we create the simple Landingpage website,ToDo list website.And attended 2 Online-workshop about HTML and CSS.
+                    <br><br>
+                    <strong><span style="color: #a855f7;">Internship certificates :</span></strong>&nbsp;<a href="intership.html" class="btn">    View</a><br><br>
+                    
+                    <strong><span style="color: #a855f7;">Landing Page :</span></strong>&nbsp;<a href="task1.html" class="btn">   View Screenshot</a><br><br>
+                   
+                    <strong><span style="color: #a855f7;">TODO List :</span></strong>&nbsp;<a href="todolist.html" class="btn">   View Screenshot</a><br>
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
