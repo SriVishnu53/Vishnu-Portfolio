@@ -35,9 +35,15 @@
           /* Ensure the image fills the circular container */
           height: auto;
       }
-
-      
-  </style>
+    </style>
+    <script>
+      // JavaScript to display a message on mobile devices
+      window.onload = function() {
+          if (/Mobi|Android/i.test(navigator.userAgent)) {
+              alert("Hey Guys! If you are viewing this portfolio on a mobile device, please switch to Desktop mode for a better experience.");
+          }
+      };
+  </script>
   </head>
   <body>
     <nav>
@@ -56,43 +62,33 @@
         </ul>
       </div>
     </nav>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
     <section class="section">
-        <div class="section__container">
-            <div class="content">
-                <p class="subtitle">HELLO</p>
-                <h1 class="title">
-                    I'm <span>Vishnu<br />a</span> Web Developer | Android Developer
-                </h1>
-                <p class="description">
-                    Welcome to my web developer | Android Developer portfolio! I'm Vishnu, a skilled and
-                    creative web developer | Android Developer with a passion for creating beautiful,
-                    responsive, and user-friendly websites and Apps.
-                </p>
-                <div class="action__btns">
-                    <a href="assets/B. Sri Vishnu.pdf" download class="My Resume">My Resume</a>
-                </div>
-                <div class="logos">
-                    <a href="https://wa.me/6382863318" target="_blank"><img src="assets/whatsapp.png" alt="WhatsApp" /></a>
-                    <a href="mailto:bsrivishnu@gmail.com" target="_blank"><img src="assets/gmail (2).png" alt="Gmail" /></a>
-                    <a href="https://www.linkedin.com/in/bsrivishnu53" target="_blank"><img src="assets/linkedin (1).png" alt="LinkedIn" /></a>
-                    <a href="https://github.com/SriVishnu53" target="_blank"><img src="assets/github (2).png" alt="GitHub" /></a>
-                    <a href="https://www.instagram.com/srivish_bjm" target="_blank"><img src="assets/instagram.png" alt="Instagram" /></a>
-                </div>
-            </div>
-            <div class="circular-image">
-                <img src="assets/vishnu.png" alt="Vishnu's Photo">
-            </div>
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">HELLO</p>
+          <h1 class="title">
+            I'm <span>Vishnu<br />a</span> Web Developer | Android Developer
+          </h1>
+          <p class="description">
+            Welcome to my web developer | Android Developer portfolio! I'm Vishnu, a skilled and
+            creative web developer | Android Developer with a passion for creating beautiful,
+            responsive, and user-friendly websites and Apps.
+          </p>
+          <div class="action__btns">
+            <a href="assets/B. Sri Vishnu.pdf" download class="My Resume">My Resume</a>
+          </div>
+          <div class="logos">
+            <a href="https://wa.me/6382863318" target="_blank"><img src="assets/whatsapp.png" alt="WhatsApp" /></a>
+            <a href="mailto:bsrivishnu@gmail.com" target="_blank"><img src="assets/gmail (2).png" alt="Gmail" /></a>
+            <a href="https://www.linkedin.com/in/bsrivishnu53" target="_blank"><img src="assets/linkedin (1).png" alt="LinkedIn" /></a>
+            <a href="https://github.com/SriVishnu53" target="_blank"><img src="assets/github (2).png" alt="GitHub" /></a>
+            <a href="https://www.instagram.com/srivish_bjm" target="_blank"><img src="assets/instagram.png" alt="Instagram" /></a>
+          </div>
         </div>
+        <div class="circular-image">
+          <img src="assets/vishnu.png" alt="Vishnu's Photo">
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
